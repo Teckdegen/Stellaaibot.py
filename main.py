@@ -1,11 +1,13 @@
+import asyncio
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from groq import Groq
 from keep_alive import keep_alive
 keep_alive()
+
 # Bot Metadata
 """
-Bot Name: TeckAi - Ai Assistant 
+Bot Name: Teck - My Bot
 Version: 1.1
 Description: A friendly AI therapist bot to provide a listening ear and support to users.
 """
@@ -20,8 +22,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
     welcome_message = (
         "Hello! 😊\n\n"
-        "I'm TeckAi, Please only Teck should ask questions "
-        "Only Teck can share anything with me. Let's start this journey together! 🌟"
+        "I'm Teck Ai assistant"
+        "This bot should only be used by Teck 🌟"
     )
     await update.message.reply_text(welcome_message)
 
@@ -78,5 +80,7 @@ def main():
     except Exception as e:
         print(f"Error occurred while running the bot: {e}")
 
-if __name__ == "__main__":
+
+    main()
+if name == "main":
     main()
