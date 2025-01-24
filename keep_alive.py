@@ -1,4 +1,4 @@
-from flask import, render_template
+from flask import, Flask
 from threading import Thread 
 
 app = flask(_name_)
