@@ -1,10 +1,11 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from groq import Groq
-
+from keep_alive import keep_alive
+keep_alive()
 # Bot Metadata
 """
-Bot Name: Stella - AI Therapist
+Bot Name: TeckAi - Ai Assistant 
 Version: 1.1
 Description: A friendly AI therapist bot to provide a listening ear and support to users.
 """
@@ -19,8 +20,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
     welcome_message = (
         "Hello! 😊\n\n"
-        "I'm Stella, your AI Therapist. I'm here to provide a listening ear and help you navigate your thoughts. "
-        "Feel free to share anything with me. Let's start this journey together! 🌟"
+        "I'm TeckAi, Please only Teck should ask questions "
+        "Only Teck can share anything with me. Let's start this journey together! 🌟"
     )
     await update.message.reply_text(welcome_message)
 
@@ -59,7 +60,7 @@ def main():
     Main function to start the Telegram bot.
     """
     # Replace with your actual bot token
-    token = "7820337311:AAF2cqmDKe-1LOtrCrKDAceWcRNOYlaLQKY"
+    token = "7854835783:AAFODdPMu8Wd28uXf8KD2DYCKxKY_6ad53U"
 
     # Initialize the application
     application = Application.builder().token(token).build()
