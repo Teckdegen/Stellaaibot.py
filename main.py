@@ -3,8 +3,8 @@ from groq import Groq
 from Keep_alive import keep_alive
 keep_alive()
 # Set your Groq API key directly
-GROQ_API_KEY = "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"  # Replace with your actual API key
-API_TOKEN = '7544439883:AAHw2hEXe2klL3EWllGwo-8lgkwUlhOyW4w'  # Replace with your actual Telegram bot token
+GROQ_API_KEY = ""  # Replace with your actual API key
+API_TOKEN = ''# Replace with your actual Telegram bot token
 
 # Initialize the Groq client
 client = Groq(api_key=GROQ_API_KEY)
