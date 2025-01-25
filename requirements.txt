@@ -1,2 +1,2 @@
-aiogram==2.231
+aiogram
 flask
