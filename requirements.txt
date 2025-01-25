@@ -1,3 +1,2 @@
-python-telegram-bot
-groq
+aiogram==2.231
 flask
